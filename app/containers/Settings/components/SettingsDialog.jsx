@@ -127,7 +127,7 @@ export default class SettingsDialog extends PureComponent {
         }
       >
         <Typography variant="h5" className={styles.title}>
-          Settings
+          设置
         </Typography>
         <DialogContent>
           <Tabs
@@ -140,16 +140,16 @@ export default class SettingsDialog extends PureComponent {
             scrollButtons="auto"
           >
             {this.shoudThisTabHeadRender(0) && (
-              <Tab label="General" className={styles.tab} />
+              <Tab label="常规" className={styles.tab} />
             )}
             {this.shoudThisTabHeadRender(1) && (
-              <Tab label="File Manager" className={styles.tab} />
+              <Tab label="文件管理器" className={styles.tab} />
             )}
             {this.shoudThisTabHeadRender(2) && (
-              <Tab label="Updates" className={styles.tab} />
+              <Tab label="更新" className={styles.tab} />
             )}
             {this.shoudThisTabHeadRender(3) && (
-              <Tab label="Privacy" className={styles.tab} />
+              <Tab label="隐私" className={styles.tab} />
             )}
           </Tabs>
 
@@ -160,7 +160,7 @@ export default class SettingsDialog extends PureComponent {
                 <div className={styles.tabContainer}>
                   <FormGroup>
                     <Typography variant="subtitle2" className={styles.subtitle}>
-                      Theme
+                      主题
                     </Typography>
                     <RadioGroup
                       aria-label="app-theme-mode"
@@ -171,17 +171,17 @@ export default class SettingsDialog extends PureComponent {
                       <FormControlLabel
                         value={APP_THEME_MODE_TYPE.light}
                         control={<Radio />}
-                        label="Light"
+                        label="浅色"
                       />
                       <FormControlLabel
                         value={APP_THEME_MODE_TYPE.dark}
                         control={<Radio />}
-                        label="Dark"
+                        label="深色"
                       />
                       <FormControlLabel
                         value={APP_THEME_MODE_TYPE.auto}
                         control={<Radio />}
-                        label="Auto"
+                        label="自动"
                       />
                     </RadioGroup>
 
@@ -191,7 +191,7 @@ export default class SettingsDialog extends PureComponent {
                           variant="subtitle2"
                           className={`${styles.subtitle}  ${styles.fmSettingsStylesFix}`}
                         >
-                          MTP Mode
+                          MTP 模式
                         </Typography>
                         <RadioGroup
                           aria-label="app-theme-mode"
@@ -219,7 +219,7 @@ export default class SettingsDialog extends PureComponent {
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Enable auto device detection (USB Hotplug)
+                      启用自动设备检测（USB 热插拔）
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -231,7 +231,7 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={enableUsbHotplug ? `Enabled` : `Disabled`}
+                      label={enableUsbHotplug ? `已启用` : `已禁用`}
                     />
                   </FormGroup>
                 </div>
@@ -244,7 +244,7 @@ export default class SettingsDialog extends PureComponent {
                 <div className={styles.tabContainer}>
                   <FormGroup>
                     <Typography variant="subtitle2" className={styles.subtitle}>
-                      Show hidden files
+                      显示隐藏文件
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -283,7 +283,7 @@ export default class SettingsDialog extends PureComponent {
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      View as grid
+                      以网格形式查看
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -326,7 +326,7 @@ export default class SettingsDialog extends PureComponent {
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Display overall progress on the file transfer screen
+                      在文件传输屏幕上显示整体进度
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -348,7 +348,7 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={`To ${DEVICES_LABEL[DEVICE_TYPE.local]}`}
+                      label={`到 ${DEVICES_LABEL[DEVICE_TYPE.local]}`}
                     />
                     <FormControlLabel
                       className={styles.switch}
@@ -370,7 +370,7 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={`To ${DEVICES_LABEL[DEVICE_TYPE.mtp]}`}
+                      label={`到 ${DEVICES_LABEL[DEVICE_TYPE.mtp]}`}
                     />
 
                     {freshInstall ? (
@@ -383,28 +383,24 @@ export default class SettingsDialog extends PureComponent {
                           className={`${styles.onboardingPaperBody}`}
                         >
                           <span className={`${styles.onboardingPaperBodyItem}`}>
-                            &#9679;&nbsp;Use the toggles to enable or disable an
-                            item.
+                            &#9679;&nbsp;使用开关启用或禁用项目。
                           </span>
                           <span className={`${styles.onboardingPaperBodyItem}`}>
-                            &#9679;&nbsp;Scroll down for more Settings.
+                            &#9679;&nbsp;向下滚动以查看更多设置。
                           </span>
                         </Typography>
                       </Paper>
                     ) : null}
 
                     <Typography variant="caption">
-                      Note: To fetch the total transfer information, the files
-                      need to be processed first. It may take a few seconds to a
-                      few minutes depending on the total number of files to be
-                      copied.
+                      注意：为了获取总传输信息，文件需要先进行处理。根据要复制的文件总数，这可能需要几秒到几分钟的时间。
                     </Typography>
 
                     <Typography
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Show directories first
+                      首先显示目录
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -419,14 +415,14 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={showDirectoriesFirst ? `Enabled` : `Disabled`}
+                      label={showDirectoriesFirst ? `已启用` : `已禁用`}
                     />
 
                     <Typography
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Show status bar
+                      显示状态栏
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -438,14 +434,14 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={enableStatusBar ? `Enabled` : `Disabled`}
+                      label={enableStatusBar ? `已启用` : `已禁用`}
                     />
 
                     <Typography
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Show Local Disk pane
+                      显示本地磁盘窗格
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -457,18 +453,17 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={showLocalPane ? `Enabled` : `Disabled`}
+                      label={showLocalPane ? `已启用` : `已禁用`}
                     />
                     <Typography variant="caption">
-                      Note: You can drag files from the Finder into the Mobile
-                      pane but not the other way around.
+                      注意：您可以将文件从 Finder 拖到移动窗格中，但不能反过来。
                     </Typography>
 
                     <Typography
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.fmSettingsStylesFix}`}
                     >
-                      Show Local Disk pane on the left side
+                      在左侧显示本地磁盘窗格
                     </Typography>
                     <FormControlLabel
                       className={styles.switch}
@@ -483,7 +478,7 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={showLocalPaneOnLeftSide ? `Enabled` : `Disabled`}
+                      label={showLocalPaneOnLeftSide ? `已启用` : `已禁用`}
                     />
                   </FormGroup>
                 </div>
@@ -497,7 +492,7 @@ export default class SettingsDialog extends PureComponent {
                 <div className={styles.tabContainer}>
                   <FormGroup>
                     <Typography variant="subtitle2" className={styles.subtitle}>
-                      Automatically check for updates
+                      自动检查更新
                     </Typography>
 
                     <FormControlLabel
@@ -510,14 +505,13 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={enableAutoUpdateCheck ? `Enabled` : `Disabled`}
+                      label={enableAutoUpdateCheck ? `已启用` : `已禁用`}
                     />
                   </FormGroup>
 
                   <FormGroup>
                     <Typography variant="subtitle2" className={styles.subtitle}>
-                      Automatically download the new updates when available
-                      (recommended)
+                      自动下载新更新（推荐）
                     </Typography>
 
                     <FormControlLabel
@@ -535,7 +529,7 @@ export default class SettingsDialog extends PureComponent {
                         />
                       }
                       label={
-                        enableBackgroundAutoUpdate ? `Enabled` : `Disabled`
+                        enableBackgroundAutoUpdate ? `已启用` : `已禁用`
                       }
                     />
                   </FormGroup>
@@ -545,7 +539,7 @@ export default class SettingsDialog extends PureComponent {
                       variant="subtitle2"
                       className={`${styles.subtitle} ${styles.subtitleMarginFix}`}
                     >
-                      Enable beta update channel
+                      启用测试版更新频道
                     </Typography>
 
                     <FormControlLabel
@@ -562,12 +556,11 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={enablePrereleaseUpdates ? `Enabled` : `Disabled`}
+                      label={enablePrereleaseUpdates ? `已启用` : `已禁用`}
                     />
                   </FormGroup>
                   <Typography variant="caption">
-                    Early access preview of the upcoming features but might
-                    result in crashes.
+                    提前访问即将推出的功能，但可能会导致崩溃。
                   </Typography>
                 </div>
               </SettingsDialogTabContainer>
@@ -580,7 +573,7 @@ export default class SettingsDialog extends PureComponent {
                 <div className={styles.tabContainer}>
                   <FormGroup>
                     <Typography variant="subtitle2" className={styles.subtitle}>
-                      Enable anonymous usage statistics gathering
+                      启用匿名使用统计信息收集
                     </Typography>
 
                     <FormControlLabel
@@ -593,21 +586,17 @@ export default class SettingsDialog extends PureComponent {
                           }
                         />
                       }
-                      label={enableAnalytics ? `Enabled` : `Disabled`}
+                      label={enableAnalytics ? `已启用` : `已禁用`}
                     />
                     <Typography variant="caption">
-                      We do not gather any kind of personal information and
-                      neither do we sell your data. We use this information only
-                      to improve the User Experience and squash some bugs.&nbsp;
+                      我们不会收集任何个人信息，也不会出售您的数据。我们仅使用此信息来改进用户体验并修复一些错误。&nbsp;
                       <a
                         className={styles.a}
                         onClick={() => {
-                          ipcRenderer.send(
-                            IpcEvents.OPEN_HELP_PRIVACY_POLICY_WINDOW
-                          );
+                          ipcRenderer.send(IpcEvents.OPEN_HELP_PRIVACY_POLICY_WINDOW);
                         }}
                       >
-                        Learn more...
+                        了解更多...
                       </a>
                     </Typography>
                   </FormGroup>
@@ -628,7 +617,7 @@ export default class SettingsDialog extends PureComponent {
             color="primary"
             className={classNames(styles.btnPositive)}
           >
-            Close
+            关闭
           </Button>
         </DialogActions>
       </Dialog>

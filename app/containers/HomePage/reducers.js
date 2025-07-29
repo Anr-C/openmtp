@@ -31,31 +31,31 @@ export const initialState = {
   sidebarFavouriteList: {
     top: [
       {
-        label: 'Home',
+        label: '主页',
         path: PATHS.homeDir,
         icon: 'folder',
         enabled: true,
       },
       {
-        label: 'Desktop',
+        label: '桌面',
         path: PATHS.desktopDir,
         icon: 'folder',
         enabled: true,
       },
       {
-        label: 'Downloads',
+        label: '下载',
         path: PATHS.downloadsDir,
         icon: 'folder',
         enabled: true,
       },
       {
-        label: 'Removable Disks',
+        label: '可移动磁盘',
         path: PATHS.volumesDir,
         icon: 'folder',
         enabled: true,
       },
       {
-        label: 'Root',
+        label: '根目录',
         path: PATHS.systemRootDir,
         icon: 'folder',
         enabled: true,
@@ -68,17 +68,17 @@ export const initialState = {
     [DEVICE_TYPE.local]: {
       up: {
         enabled: true,
-        label: 'Folder Up',
+        label: '上一级文件夹',
         icon: faArrowLeft,
       },
       refresh: {
         enabled: true,
-        label: 'Refresh',
+        label: '刷新',
         icon: faSync,
       },
       delete: {
         enabled: true,
-        label: 'Delete',
+        label: '删除',
         icon: faTrashAlt,
       },
       gitHub: {
@@ -88,55 +88,55 @@ export const initialState = {
       },
       settings: {
         enabled: true,
-        label: 'Settings',
+        label: '设置',
         icon: faCog,
       },
       faqs: {
         enabled: true,
-        label: 'Help - FAQs',
+        label: '帮助 - 常见问题',
         icon: faQuestionCircle,
       },
     },
     [DEVICE_TYPE.mtp]: {
       up: {
         enabled: true,
-        label: 'Folder Up',
+        label: '文件夹上一级',
         icon: faArrowLeft,
       },
       refresh: {
         enabled: true,
-        label: 'Refresh',
+        label: '刷新',
         icon: faSync,
       },
       delete: {
         enabled: true,
-        label: 'Delete',
+        label: '删除',
         icon: faTrashAlt,
       },
       storage: {
         enabled: true,
-        label: 'Storage',
+        label: '存储',
         icon: faSdCard,
       },
       mtpMode: {
         enabled: isKalamModeSupported(),
-        label: 'MTP Mode',
+        label: 'MTP模式',
         icon: faPlug,
       },
       paypal: {
         enabled: true,
-        label: supportUsingPayPal,
+        label: '通过PayPal支持',
         icon: faPaypal,
       },
       buyMeACoffee: {
         enabled: true,
-        label: buyMeACoffeeText,
+        label: '请我喝咖啡',
         image: 'toolbar/buymeacoffee.png',
         icon: null,
       },
       settings: {
         enabled: true,
-        label: 'Settings',
+        label: '设置',
         icon: faCog,
       },
     },
@@ -184,59 +184,59 @@ export const initialState = {
     [DEVICE_TYPE.local]: {
       rename: {
         enabled: true,
-        label: 'Rename',
+        label: '重命名',
         data: {},
       },
       copy: {
         enabled: true,
-        label: 'Copy',
+        label: '复制',
         data: {},
       },
       copyToQueue: {
         enabled: true,
-        label: 'Copy to Queue',
+        label: '加入复制队列',
         data: {},
       },
       paste: {
         enabled: true,
-        label: 'Paste',
+        label: '粘贴',
         data: {},
       },
       newFolder: {
         enabled: true,
-        label: 'New Folder',
+        label: '新建文件夹',
         data: {},
       },
       showInEnclosingFolder: {
         enabled: true,
-        label: 'Open in Finder',
+        label: '在Finder中打开',
         data: {},
       },
     },
     [DEVICE_TYPE.mtp]: {
       rename: {
         enabled: true,
-        label: 'Rename',
+        label: '重命名',
         data: {},
       },
       copy: {
         enabled: true,
-        label: 'Copy',
+        label: '复制',
         data: {},
       },
       copyToQueue: {
         enabled: true,
-        label: 'Copy to Queue',
+        label: '加入复制队列',
         data: {},
       },
       paste: {
         enabled: true,
-        label: 'Paste',
+        label: '粘贴',
         data: {},
       },
       newFolder: {
         enabled: true,
-        label: 'New Folder',
+        label: '新建文件夹',
         data: {},
       },
     },

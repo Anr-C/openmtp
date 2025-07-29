@@ -3,83 +3,83 @@ import { IS_DEV } from './env';
 
 export const fileExplorerKeymaps = {
   newFolder: {
-    label: `New Folder`,
+    label: `新建文件夹`,
     keys: ['command+n'],
   },
   copy: {
-    label: `Copy`,
+    label: `复制`,
     keys: ['command+c'],
   },
   copyToQueue: {
-    label: `Copy to Queue`,
+    label: `加入复制队列`,
     keys: ['command+shift+c'],
   },
   paste: {
-    label: `Paste`,
+    label: `粘贴`,
     keys: ['command+v'],
   },
   delete: {
-    label: `Delete`,
+    label: `删除`,
     keys: ['backspace', 'delete'],
   },
   refresh: {
-    label: `Refresh`,
+    label: `刷新`,
     keys: IS_DEV ? ['command+alt+r'] : ['command+r'],
   },
   up: {
-    label: `Folder Up`,
+    label: `上一级文件夹`,
     keys: ['command+b'],
   },
   selectAll: {
-    label: `Select All`,
+    label: `全选`,
     keys: ['command+a'],
   },
   rename: {
-    label: `Rename`,
+    label: `重命名`,
     keys: ['command+d'],
   },
   open: {
-    label: `Open`,
+    label: `打开`,
     keys: ['enter'],
   },
   fileExplorerTabSwitch: {
-    label: `Switch Tab`,
+    label: `切换标签页`,
     keys: ['command+1'],
   },
   navigationLeft: {
-    label: `Navigate Left`,
+    label: `向左导航`,
     keys: ['left'],
   },
   navigationRight: {
-    label: `Navigate Right`,
+    label: `向右导航`,
     keys: ['right'],
   },
   navigationUp: {
-    label: `Navigate Up`,
+    label: `向上导航`,
     keys: ['up'],
   },
   navigationDown: {
-    label: `Navigate Down`,
+    label: `向下导航`,
     keys: ['down'],
   },
   multipleSelectLeft: {
-    label: `Select Multiple Items Forward (for Grid view)`,
+    label: `多选（网格视图，向前）`,
     keys: ['shift+left'],
   },
   multipleSelectRight: {
-    label: `Select Multiple Items Backward (for Grid view)`,
+    label: `多选（网格视图，向后）`,
     keys: ['shift+right'],
   },
   multipleSelectUp: {
-    label: `Select Multiple Items Forward (for List view)`,
+    label: `多选（列表视图，向前）`,
     keys: ['shift+up'],
   },
   multipleSelectDown: {
-    label: `Select Multiple Items Backward (for List view)`,
+    label: `多选（列表视图，向后）`,
     keys: ['shift+down'],
   },
   multipleSelectClick: {
-    label: `Select Multiple Items (using mouse)`,
+    label: `多选（鼠标点击）`,
     keys: ['command+click', 'shift+click'],
   },
 };

@@ -26,7 +26,7 @@ class WhatsNew extends PureComponent {
             className={styles.title}
             color="secondary"
           >
-            What&apos;s new in {APP_NAME}-{APP_VERSION}?
+            {APP_NAME}-{APP_VERSION} 的新功能
           </Typography>
         )}
 
@@ -35,7 +35,7 @@ class WhatsNew extends PureComponent {
             <ListItemIcon>
               <BugReportIcon htmlColor="#FF0000" />
             </ListItemIcon>
-            <ListItemText primary="Fixes a bug which caused slow data transfer speed" />
+            <ListItemText primary="修复了导致数据传输速度缓慢的错误" />
           </ListItem>
 
           {isKalamModeDisabled && (
@@ -44,8 +44,8 @@ class WhatsNew extends PureComponent {
                 <SystemUpdate htmlColor="#fa4d0a" />
               </ListItemIcon>
               <ListItemText
-                primary={`We have now officially retired the support for '${MTP_MODE.kalam}' Kernel on macOS 10.13 (OS X El High Sierra) and lower`}
-                secondary={`However the '${MTP_MODE.legacy}' MTP mode will continue working on these outdated machines`}
+                primary={`我们已正式停止对 macOS 10.13（OS X El High Sierra）及更低版本的 '${MTP_MODE.kalam}' 内核支持`}
+                secondary={`然而，'${MTP_MODE.legacy}' MTP 模式将继续在这些过时的设备上工作`}
               />
             </ListItem>
           )}
@@ -54,7 +54,7 @@ class WhatsNew extends PureComponent {
             <ListItemIcon>
               <BuildIcon />
             </ListItemIcon>
-            <ListItemText primary="Other UI optimization and performance improvements" />
+            <ListItemText primary="其他 UI 优化和性能改进" />
           </ListItem>
         </List>
       </div>

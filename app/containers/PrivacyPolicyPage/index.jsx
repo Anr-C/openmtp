@@ -31,7 +31,7 @@ class PrivacyPolicyPage extends Component {
           <title>{PRIVACY_POLICY_PAGE_TITLE}</title>
         </Helmet>
         <Typography variant="h5" className={styles.heading}>
-          Privacy policy for {APP_NAME}
+          {APP_NAME} 的隐私政策
         </Typography>
         <div className={styles.body}>
           <p>

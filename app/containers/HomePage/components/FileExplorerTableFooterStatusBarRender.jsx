@@ -80,21 +80,11 @@ class FileExplorerTableFooterStatusBarRender extends PureComponent {
           <RenderDeviceName />
 
           {selectedTotal > 0 ? (
-            <Fragment>{`${selectedTotal} of ${total} selected`}</Fragment>
+            <Fragment>{`${selectedTotal} 个已选中，共 ${total} 个`}</Fragment>
           ) : (
-            <Fragment>{`${total} ${getPluralText(
-              'item',
-              total
-            )} (${directories} ${getPluralText(
-              'directory',
-              directories,
-              'directories'
-            )}, ${files} ${getPluralText('file', files)})`}</Fragment>
+            <Fragment>{`${total} ${getPluralText('项', total)} (${directories} ${getPluralText('目录', directories, '目录')}, ${files} ${getPluralText('文件', files)})`}</Fragment>
           )}
-          {`, ${fileTransferClipboardLength} ${getPluralText(
-            'item',
-            fileTransferClipboardLength
-          )} in clipboard`}
+          {`, 剪贴板中有 ${fileTransferClipboardLength} ${getPluralText('项', fileTransferClipboardLength)}`}
         </Typography>
       </div>
     );

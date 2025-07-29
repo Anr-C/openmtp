@@ -13,20 +13,20 @@ const rows = [
     id: 'name',
     numeric: false,
     disablePadding: false,
-    label: 'Name',
+    label: '名称',
   },
   {
     id: 'size',
     numeric: false,
     disablePadding: true,
-    label: 'Size',
+    label: '大小',
   },
   {
     // for legacy kernel it is date added while for kalam kernel it is modified time
     id: 'dateAdded',
     numeric: false,
     disablePadding: true,
-    label: 'Date',
+    label: '日期',
   },
 ];
 

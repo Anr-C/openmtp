@@ -10,11 +10,11 @@ export default class NotFound extends Component {
     return (
       <Fragment>
         <Helmet titleTemplate={`%s - ${APP_TITLE}`}>
-          <title>Resource not found!</title>
+          <title>资源未找到!</title>
         </Helmet>
         <div className={styles.container}>
-          <h1>Resource not found!</h1>
-          <Link to={routes.Home.path}>Go back</Link>
+          <h1>资源未找到!</h1>
+          <Link to={routes.Home.path}>返回</Link>
         </div>
       </Fragment>
     );

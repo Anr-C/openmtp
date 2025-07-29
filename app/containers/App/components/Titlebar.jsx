@@ -34,11 +34,11 @@ class Titlebar extends PureComponent {
               parseInt(selectedStorage?.data.info?.FreeSpaceInBytes ?? 0, 10)
             )} Free of ${niceBytes(
               parseInt(selectedStorage?.data.info?.MaxCapability ?? 0, 10)
-            )}, ${capitalize(mtpMode)} Mode`}
+            )}, ${capitalize(mtpMode)} 模式`}
           </span>
         ) : (
           <span className={styles.deviceInfo}>
-            {`${capitalize(mtpMode)} Mode`}
+            {`${capitalize(mtpMode)} 模式`}
           </span>
         )}
       </div>

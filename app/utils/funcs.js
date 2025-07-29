@@ -263,7 +263,7 @@ export const getPluralText = (string, count, customPluralString = null) => {
       return customPluralString;
     }
 
-    return `${string}s`;
+    return `${string}`;
   }
 
   return string;

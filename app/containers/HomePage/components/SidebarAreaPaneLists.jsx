@@ -64,7 +64,7 @@ class SidebarAreaPaneLists extends PureComponent {
     return (
       <div className={styles.listsWrapper}>
         <Typography variant="caption" className={styles.listsCaption}>
-          Favorites
+          喜好
         </Typography>
         {sidebarTop.length > 1 && this.ListsRender(sidebarTop)}
 

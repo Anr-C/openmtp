@@ -146,28 +146,28 @@ const supportBtnsList = [
 const socialMediaShareBtnsList = [
   {
     enabled: true,
-    label: 'Find us on GitHub',
+    label: '在 GitHub 上找到我们',
     icon: faGithub,
     url: APP_GITHUB_URL,
     invert: false,
   },
   {
     enabled: true,
-    label: 'Share it on Twitter',
+    label: '分享到 Twitter',
     icon: faTwitter,
     url: twitterShareUrl,
     invert: false,
   },
   {
     enabled: true,
-    label: 'Share it on Facebook',
+    label: '分享到 Facebook',
     icon: faFacebook,
     url: fbShareUrl,
     invert: false,
   },
   {
     enabled: true,
-    label: 'Share it on Reddit',
+    label: '分享到 Reddit',
     icon: faReddit,
     url: redditShareUrl,
     invert: false,

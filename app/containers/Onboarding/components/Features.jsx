@@ -64,7 +64,7 @@ class Features extends PureComponent {
             className={styles.title}
             color="secondary"
           >
-            Features
+            功能
           </Typography>
         )}
         <List>
@@ -73,8 +73,8 @@ class Features extends PureComponent {
               <UsbIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Connect via USB cable"
-              secondary="Highest data transfer rates"
+              primary="通过 USB 数据线连接"
+              secondary="最高数据传输速率"
             />
           </ListItem>
           <ListItem>
@@ -82,8 +82,8 @@ class Features extends PureComponent {
               <FileCopyIcon />
             </ListItemIcon>
             <ListItemText
-              primary="5-6x faster file copy speed"
-              secondary={`Settings > 'General' Tab > 'MTP Mode' > Select '${kalamLabel} Mode'`}
+              primary="5-6 倍更快的文件复制速度"
+              secondary={`设置 > '常规' 标签 > 'MTP 模式' > 选择 '${kalamLabel} 模式'`}
             />
           </ListItem>
           <ListItem>
@@ -91,43 +91,43 @@ class Features extends PureComponent {
               <Brightness4Icon />
             </ListItemIcon>
             <ListItemText
-              primary="Dark Theme mode"
-              secondary="Settings > 'General' Tab > 'Theme'"
+              primary="深色主题模式"
+              secondary="设置 > '常规' 标签 > '主题'"
             />
           </ListItem>
           <ListItem>
             <ListItemIcon>
               <FlipToBackIcon />
             </ListItemIcon>
-            <ListItemText primary="Drag and Drop files from the macOS Finder window" />
+            <ListItemText primary="从 macOS Finder 窗口拖放文件" />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <CollectionsIcon />
             </ListItemIcon>
-            <ListItemText primary="Transfer multiple files which are larger than 4GB in one go." />
+            <ListItemText primary="一次传输多个大于 4GB 的文件。" />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <MemoryIcon />
             </ListItemIcon>
-            <ListItemText primary="Apple Silicon support" />
+            <ListItemText primary="支持 Apple Silicon" />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <SmartphoneIcon />
             </ListItemIcon>
-            <ListItemText primary={`Garmin device support`} />
+            <ListItemText primary={`支持 Garmin 设备`} />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <CameraRollIcon />
             </ListItemIcon>
-            <ListItemText primary={`Fujifilm device support`} />
+            <ListItemText primary={`支持 Fujifilm 设备`} />
           </ListItem>
 
           <ListItem>
@@ -135,8 +135,8 @@ class Features extends PureComponent {
               <ViewListIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Choose between Grid and List view"
-              secondary="Settings > 'File Manager' Tab"
+              primary="在网格视图和列表视图之间选择"
+              secondary="设置 > '文件管理器' 标签"
             />
           </ListItem>
 
@@ -145,8 +145,8 @@ class Features extends PureComponent {
               <SettingsOverscanIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Single pane mode"
-              secondary="Settings > 'File Manager' Tab > 'Show Local Disk pane'"
+              primary="单窗格模式"
+              secondary="设置 > '文件管理器' 标签 > '显示本地磁盘窗格'"
             />
           </ListItem>
 
@@ -155,8 +155,8 @@ class Features extends PureComponent {
               <TabIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Tab Layout"
-              secondary="Use mouse clicks or keyboard shortcut to navigate through them"
+              primary="标签布局"
+              secondary="使用鼠标点击或键盘快捷键进行导航"
             />
           </ListItem>
 
@@ -164,14 +164,14 @@ class Features extends PureComponent {
             <ListItemIcon>
               <SdStorageIcon />
             </ListItemIcon>
-            <ListItemText primary="Choose between Internal Memory and SD Card" />
+            <ListItemText primary="在内部存储和 SD 卡之间选择" />
           </ListItem>
 
           <ListItem>
             <ListItemIcon>
               <FlashOnIcon />
             </ListItemIcon>
-            <ListItemText primary="Auto device detection (USB Hotplug)" />
+            <ListItemText primary="自动设备检测（USB 热插拔）" />
           </ListItem>
 
           <ListItem>
@@ -179,8 +179,8 @@ class Features extends PureComponent {
               <HourglassFullIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Display Overall Progress on the File Transfer Screen"
-              secondary="Settings > File Manager Tab > Enable 'Display overall progress on the file transfer screen'"
+              primary="在文件传输屏幕上显示整体进度"
+              secondary="设置 > 文件管理器标签 > 启用 '在文件传输屏幕上显示整体进度'"
             />
           </ListItem>
 
@@ -196,11 +196,11 @@ class Features extends PureComponent {
               <KeyboardIcon />
             </ListItemIcon>
             <ListItemText
-              primary="Keyboard Navigation"
+              primary="键盘导航"
               secondary={
                 !expansionPanel.keyboardNavigation
-                  ? 'Click here to view the keyboard shortcuts'
-                  : 'Click here to hide the keyboard shortcuts'
+                  ? '点击此处查看键盘快捷键'
+                  : '点击此处隐藏键盘快捷键'
               }
             />
             {expansionPanel.keyboardNavigation ? (

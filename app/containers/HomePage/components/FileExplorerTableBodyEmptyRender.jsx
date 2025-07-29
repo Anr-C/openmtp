@@ -115,11 +115,11 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                     <WarningIcon color="error" />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Android device is either busy or not connected"
+                    primary="安卓设备正忙或未连接"
                     secondary={
                       !expansionPanel.noMtpInstructions
-                        ? 'Click here for the instructions'
-                        : 'Click here to hide the instructions'
+                        ? '点击此处查看说明'
+                        : '点击此处隐藏说明'
                     }
                   />
                   {expansionPanel.noMtpInstructions ? (
@@ -140,14 +140,10 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                           <CloseIcon />
                         </ListItemIcon>
                         <ListItemText
-                          primary="Quit Google drive, Android File Transfer, Dropbox, OneDrive, Preview (for macOS ventura) or any other app that might be reading USB"
+                          primary="退出 Google Drive、Android 文件传输、Dropbox、OneDrive、预览（macOS Ventura）或任何可能读取 USB 的应用程序"
                           secondary={
                             <span>
-                              {`Uninstall 'Android File Transfer' by Google if it
-                              keeps popping up everytime you connect your
-                              Android device. The most recent versions of Google
-                              drive and Dropbox are known to interfere with ${APP_NAME}. Completely quiting these apps may fix
-                              this issue. `}
+                              {`如果每次连接安卓设备时都会弹出 Google 的“Android 文件传输”，请卸载该应用。最新版 Google Drive 和 Dropbox 可能会干扰 ${APP_NAME}，完全退出这些应用可能解决问题。`}
                               <a
                                 onClick={(events) => {
                                   openExternalUrl(
@@ -156,7 +152,7 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                                   );
                                 }}
                               >
-                                Read more...
+                                阅读更多...
                               </a>
                             </span>
                           }
@@ -168,8 +164,8 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                           <ToggleOffIcon />
                         </ListItemIcon>
                         <ListItemText
-                          primary={`If you face frequent device disconnections, turn off 'USB Hotplug'`}
-                          secondary={`Settings > General Tab`}
+                          primary={`如果您遇到设备频繁断开连接的问题，请关闭“USB 热插拔”功能`}
+                          secondary={`设置 > 常规选项卡`}
                         />
                       </ListItem>
 
@@ -177,49 +173,48 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                         <ListItemIcon>
                           <LockOpenIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Unlock your Android device" />
+                        <ListItemText primary="请解锁您的安卓设备" />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <UsbIcon />
                         </ListItemIcon>
-                        <ListItemText primary="With a USB cable, connect your device to your computer" />
+                        <ListItemText primary="使用 USB 数据线将设备连接到电脑" />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <TouchAppIcon />
                         </ListItemIcon>
                         <ListItemText
-                          primary="On your device, tap the 'Charging this device via
-                  USB' notification"
+                          primary="在您的设备上，点击“通过USB为此设备充电”的通知"
                         />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <RadioButtonCheckedIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Under 'Use USB for' select File Transfer" />
+                        <ListItemText primary="在“USB用途”中选择“文件传输”" />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <CachedIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Tap on the 'Refresh' button above" />
+                        <ListItemText primary="点击上方的“刷新”按钮" />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <PermDeviceInformationIcon />
                         </ListItemIcon>
                         <ListItemText
-                          primary="If you are trying to connect a SAMSUNG device then accept the 'Allow access to device data' confirmation pop up in your phone"
-                          secondary="Tap on the 'Refresh' button again. Reconnect your phone and repeat the above steps if it doesn't help"
+                          primary="如果您尝试连接三星设备，请在手机中接受“允许访问设备数据”的确认弹窗"
+                          secondary="再次点击“刷新”按钮。如果仍无效，请重新连接手机并重复上述步骤"
                         />
                       </ListItem>
                       <ListItem>
                         <ListItemIcon>
                           <SettingsInputHdmiIcon />
                         </ListItemIcon>
-                        <ListItemText primary="Reconnect the cable and repeat the above steps if you keep seeing this message" />
+                        <ListItemText primary="重新连接数据线并重复上述步骤，如果您仍然看到此消息" />
                       </ListItem>
                     </div>
                   </List>
@@ -239,11 +234,11 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                     <KeyboardIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Keyboard Shortcuts"
+                    primary="键盘快捷键"
                     secondary={
                       expansionPanel.keyboardNavigation
-                        ? 'Click here to hide the shortcuts'
-                        : 'Click here to view the shortcuts'
+                        ? '点击此处隐藏快捷键'
+                        : '点击此处查看快捷键'
                     }
                   />
                   {expansionPanel.keyboardNavigation ? (
@@ -280,11 +275,11 @@ class FileExplorerTableBodyEmptyRender extends PureComponent {
                     <StarRateIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Features"
+                    primary="功能"
                     secondary={
                       expansionPanel.features
-                        ? 'Click here to hide the available features'
-                        : 'Click here to view the available features'
+                        ? '点击此处隐藏可用功能'
+                        : '点击此处查看可用功能'
                     }
                   />
                   {expansionPanel.features ? (

@@ -56,7 +56,7 @@ class Breadcrumb extends PureComponent {
 
       if (a === '' && index === 0) {
         _currentBrowsePath.push({
-          label: 'Root',
+          label: '根目录',
           path: '/',
           isCompressed: _isCompressed,
           enabled: _enabled,

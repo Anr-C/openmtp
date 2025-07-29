@@ -41,7 +41,7 @@ export default class MenuBuilder {
 
       Menu.buildFromTemplate([
         {
-          label: 'Inspect element',
+          label: '检查元素',
           click: () => {
             this.mainWindow.inspectElement(x, y);
           },
@@ -57,32 +57,32 @@ export default class MenuBuilder {
       label: `${APP_NAME}`,
       submenu: [
         {
-          label: `About ${APP_NAME}`,
+          label: `关于 ${APP_NAME}`,
           selector: 'orderFrontStandardAboutPanel:',
         },
         { type: 'separator' },
         {
           visible: this.appUpdaterEnable,
-          label: 'Check For Updates',
+          label: '检查更新',
           click: () => {
             this.autoAppUpdate.forceCheck();
           },
         },
         { type: 'separator' },
         {
-          label: `Hide ${APP_NAME}`,
+          label: `隐藏 ${APP_NAME}`,
           accelerator: 'Command+H',
           selector: 'hide:',
         },
         {
-          label: 'Hide Others',
+          label: '隐藏其他',
           accelerator: 'Command+Shift+H',
           selector: 'hideOtherApplications:',
         },
-        { label: 'Show All', selector: 'unhideAllApplications:' },
+        { label: '显示全部', selector: 'unhideAllApplications:' },
         { type: 'separator' },
         {
-          label: 'Quit',
+          label: '退出',
           accelerator: 'Command+Q',
           click: () => {
             app.quit();
@@ -91,41 +91,41 @@ export default class MenuBuilder {
       ],
     };
     const subMenuEdit = {
-      label: 'Edit',
+      label: '编辑',
       submenu: [
         {
-          label: 'Undo',
+          label: '撤销',
           accelerator: 'Command+Z',
           selector: 'undo:',
           role: 'undo',
         },
         {
-          label: 'Redo',
+          label: '重做',
           accelerator: 'Command+Y',
           selector: 'redo:',
           role: 'redo',
         },
         { type: 'separator' },
         {
-          label: 'Cut',
+          label: '剪切',
           accelerator: 'Command+X',
           selector: 'cut:',
           role: 'cut',
         },
         {
-          label: 'Copy',
+          label: '复制',
           accelerator: 'Command+C',
           selector: 'copy:',
           role: 'copy',
         },
         {
-          label: 'Paste',
+          label: '粘贴',
           accelerator: 'Command+V',
           selector: 'paste:',
           role: 'paste',
         },
         {
-          label: 'Select All',
+          label: '全选',
           accelerator: 'Command+A',
           selector: 'selectAll:',
           role: 'selectAll',
@@ -133,24 +133,24 @@ export default class MenuBuilder {
       ],
     };
     const subMenuViewDev = {
-      label: 'View',
+      label: '视图',
       submenu: [
         {
-          label: 'Reload',
+          label: '重新加载',
           accelerator: 'Command+R',
           click: () => {
             this.mainWindow.webContents.reload();
           },
         },
         {
-          label: 'Toggle Full Screen',
+          label: '切换全屏',
           accelerator: 'Ctrl+Command+F',
           click: () => {
             this.mainWindow.setFullScreen(!this.mainWindow.isFullScreen());
           },
         },
         {
-          label: 'Toggle Developer Tools',
+          label: '切换开发者工具',
           accelerator: 'Alt+Command+I',
           click: () => {
             this.mainWindow.toggleDevTools();
@@ -159,10 +159,10 @@ export default class MenuBuilder {
       ],
     };
     const subMenuViewProd = {
-      label: 'View',
+      label: '视图',
       submenu: [
         {
-          label: 'Toggle Full Screen',
+          label: '切换全屏',
           accelerator: 'Ctrl+Command+F',
           click: () => {
             this.mainWindow.setFullScreen(!this.mainWindow.isFullScreen());
@@ -171,59 +171,59 @@ export default class MenuBuilder {
       ],
     };
     const subMenuWindow = {
-      label: 'Window',
+      label: '窗口',
       submenu: [
         {
-          label: 'Minimize',
+          label: '最小化',
           accelerator: 'Command+M',
           selector: 'performMiniaturize:',
         },
-        { label: 'Close', accelerator: 'Command+W', selector: 'performClose:' },
+        { label: '关闭', accelerator: 'Command+W', selector: 'performClose:' },
         { type: 'separator' },
-        { label: 'Bring All To Front', selector: 'arrangeInFront:' },
+        { label: '全部置顶', selector: 'arrangeInFront:' },
       ],
     };
     const subMenuHelp = {
-      label: 'Help',
+      label: '帮助',
       submenu: [
         {
-          label: 'Report Bugs',
+          label: '报告问题',
           click: () => {
             reportBugsWindow();
           },
         },
         {
-          label: 'Keyboard Shortcuts',
+          label: '键盘快捷键',
           click: () => {
             keyboardShortcutsWindow();
           },
         },
         {
-          label: 'New Features And Updates',
+          label: '新功能与更新',
           click: () => {
             appFeaturesWindow();
           },
         },
         {
-          label: 'Privacy Policy',
+          label: '隐私政策',
           click: () => {
             privacyPolicyWindow();
           },
         },
         {
-          label: 'Buy Me A Coffee!',
+          label: '请我喝咖啡！',
           click: () => {
             openExternalUrl(BUY_ME_A_COFFEE_URL);
           },
         },
         {
-          label: `Invite A Friend`,
+          label: `邀请朋友`,
           click: () => {
             openExternalUrl(inviteViaEmail);
           },
         },
         {
-          label: 'Find Us On GitHub',
+          label: '在 GitHub 上找到我们',
           click: () => {
             openExternalUrl(APP_GITHUB_URL);
           },
@@ -241,14 +241,14 @@ export default class MenuBuilder {
   buildDefaultTemplate() {
     return [
       {
-        label: '&File',
+        label: '文件',
         submenu: [
           {
-            label: '&Open',
+            label: '打开',
             accelerator: 'Ctrl+O',
           },
           {
-            label: '&Close',
+            label: '关闭',
             accelerator: 'Ctrl+W',
             click: () => {
               this.mainWindow.close();
@@ -257,18 +257,18 @@ export default class MenuBuilder {
         ],
       },
       {
-        label: '&View',
+        label: '视图',
         submenu: ENV_FLAVOR.allowDevelopmentEnvironment
           ? [
               {
-                label: '&Reload',
+                label: '重新加载',
                 accelerator: 'Ctrl+R',
                 click: () => {
                   this.mainWindow.webContents.reload();
                 },
               },
               {
-                label: 'Toggle &Full Screen',
+                label: '切换全屏',
                 accelerator: 'F11',
                 click: () => {
                   this.mainWindow.setFullScreen(
@@ -277,7 +277,7 @@ export default class MenuBuilder {
                 },
               },
               {
-                label: 'Toggle &Developer Tools',
+                label: '切换开发者工具',
                 accelerator: 'Alt+Ctrl+I',
                 click: () => {
                   this.mainWindow.toggleDevTools();
@@ -286,7 +286,7 @@ export default class MenuBuilder {
             ]
           : [
               {
-                label: 'Toggle &Full Screen',
+                label: '切换全屏',
                 accelerator: 'F11',
                 click: () => {
                   this.mainWindow.setFullScreen(
@@ -297,53 +297,53 @@ export default class MenuBuilder {
             ],
       },
       {
-        label: 'Help',
+        label: '帮助',
         submenu: [
           {
             visible: this.appUpdaterEnable,
-            label: 'Check For Updates',
+            label: '检查更新',
             click: () => {
               this.autoAppUpdate.forceCheck();
             },
           },
           {
-            label: 'Report Bugs',
+            label: '报告问题',
             click: () => {
               reportBugsWindow();
             },
           },
           {
-            label: 'Keyboard Shortcuts',
+            label: '键盘快捷键',
             click: () => {
               keyboardShortcutsWindow();
             },
           },
           {
-            label: 'New Features And Updates',
+            label: '新功能与更新',
             click: () => {
               appFeaturesWindow();
             },
           },
           {
-            label: 'Privacy Policy',
+            label: '隐私政策',
             click: () => {
               privacyPolicyWindow();
             },
           },
           {
-            label: 'Buy Me A Coffee!',
+            label: '请我喝咖啡！',
             click: () => {
               openExternalUrl(BUY_ME_A_COFFEE_URL);
             },
           },
           {
-            label: `Invite A Friend`,
+            label: `邀请朋友`,
             click: () => {
               openExternalUrl(inviteViaEmail);
             },
           },
           {
-            label: 'Find Us On GitHub',
+            label: '在 GitHub 上找到我们',
             click: () => {
               openExternalUrl(APP_GITHUB_URL);
             },

@@ -76,12 +76,11 @@ class HelpPhoneNotRecognized extends PureComponent {
             <TouchAppIcon />
           </ListItemIcon>
           <ListItemText
-            primary="On your device, tap the 'Charging this device via
-                  USB' notification"
+            primary="在您的设备上，点击“通过USB为此设备充电”的通知"
             secondary={
               <img
                 src={imgsrc(`help/usb-notification-charging-via-usb.png`)}
-                alt="Use USB for"
+                alt="通过USB充电"
                 className={styles.imagePlaceholder}
               />
             }
@@ -92,11 +91,11 @@ class HelpPhoneNotRecognized extends PureComponent {
             <RadioButtonCheckedIcon />
           </ListItemIcon>
           <ListItemText
-            primary="Under 'Use USB for' select File Transfer"
+            primary="在“USB用途”中选择“文件传输”"
             secondary={
               <img
                 src={imgsrc(`help/transfer-media-permission.png`)}
-                alt="Allow access to the device data"
+                alt="文件传输"
                 className={styles.imagePlaceholder}
               />
             }
@@ -117,7 +116,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <ListItemIcon>
             <LockOpenIcon />
           </ListItemIcon>
-          <ListItemText primary="Unlock your Android device" />
+          <ListItemText primary="请解锁您的安卓设备" />
         </ListItem>
 
         <ListItem>
@@ -125,8 +124,8 @@ class HelpPhoneNotRecognized extends PureComponent {
             <UsbIcon />
           </ListItemIcon>
           <ListItemText
-            primary={`Unplug your ${deviceLabel.toLowerCase()} and reconnect it`}
-            secondary={`Follow the instructions below if your ${deviceLabel.toLowerCase()} is still undetected`}
+            primary={`请拔掉您的${deviceLabel.toLowerCase()}并重新连接`}
+            secondary={`如果您的${deviceLabel.toLowerCase()}仍未被识别，请按照以下说明操作`}
           />
         </ListItem>
 
@@ -135,11 +134,11 @@ class HelpPhoneNotRecognized extends PureComponent {
             <TouchAppIcon />
           </ListItemIcon>
           <ListItemText
-            primary="On your device, tap the 'Transferring media files' notification"
+            primary="在您的设备上，点击“正在传输媒体文件”的通知"
             secondary={
               <img
                 src={imgsrc(`help/usb-notification-transferring-media.png`)}
-                alt="Transferring media files"
+                alt="传输媒体文件"
                 className={styles.imagePlaceholder}
               />
             }
@@ -150,11 +149,11 @@ class HelpPhoneNotRecognized extends PureComponent {
             <RadioButtonCheckedIcon />
           </ListItemIcon>
           <ListItemText
-            primary="Under 'Use USB for' select 'Charging'"
+            primary="在“USB用途”中选择“充电”"
             secondary={
               <img
                 src={imgsrc(`help/charge-only-permission.png`)}
-                alt="Charging"
+                alt="仅充电"
                 className={styles.imagePlaceholder}
               />
             }
@@ -168,7 +167,7 @@ class HelpPhoneNotRecognized extends PureComponent {
             <FiberManualRecordIcon />
           </ListItemIcon>
           <ListItemText
-            primary="It should connect automatically"
+            primary="设备应会自动连接"
             secondary={hotplugSettingText}
           />
         </ListItem>
@@ -177,7 +176,7 @@ class HelpPhoneNotRecognized extends PureComponent {
             <CachedIcon />
           </ListItemIcon>
           <ListItemText
-            primary={`Tap on the 'Refresh' button in the app if the ${deviceLabel.toLowerCase()} doesn't get connected automatically`}
+            primary={`如果${deviceLabel.toLowerCase()}未能自动连接，请点击应用中的“刷新”按钮`}
             secondary={hotplugSettingText}
           />
         </ListItem>
@@ -187,11 +186,11 @@ class HelpPhoneNotRecognized extends PureComponent {
             <TouchAppIcon />
           </ListItemIcon>
           <ListItemText
-            primary={`Tap on the "Allow" button, if you see the "Allow access to the device data" pop up`}
+            primary={`如果弹出“允许访问设备数据”窗口，请点击“允许”按钮`}
             secondary={
               <img
                 src={imgsrc(`help/allow-data-access.png`)}
-                alt="Allow access to the device data"
+                alt="允许访问设备数据"
                 className={styles.imagePlaceholder}
               />
             }
@@ -214,7 +213,7 @@ class HelpPhoneNotRecognized extends PureComponent {
             <ListItemIcon>
               <LockOpenIcon />
             </ListItemIcon>
-            <ListItemText primary="Unlock your Android device" />
+            <ListItemText primary="请解锁您的安卓设备" />
           </ListItem>
         )}
 
@@ -224,7 +223,7 @@ class HelpPhoneNotRecognized extends PureComponent {
               <UsbIcon />
             </ListItemIcon>
             <ListItemText
-              primary={`Unplug your ${deviceLabel.toLowerCase()} and reconnect it`}
+              primary={`请拔掉您的${deviceLabel.toLowerCase()}并重新连接`}
             />
           </ListItem>
         )}
@@ -236,7 +235,7 @@ class HelpPhoneNotRecognized extends PureComponent {
             <FiberManualRecordIcon />
           </ListItemIcon>
           <ListItemText
-            primary="It should connect automatically"
+            primary="设备应会自动连接"
             secondary={hotplugSettingText}
           />
         </ListItem>
@@ -245,7 +244,7 @@ class HelpPhoneNotRecognized extends PureComponent {
             <CachedIcon />
           </ListItemIcon>
           <ListItemText
-            primary={`Tap on the 'Refresh' button in the app if the ${deviceLabel.toLowerCase()} doesn't get connected automatically`}
+            primary={`如果${deviceLabel.toLowerCase()}未能自动连接，请点击应用中的“刷新”按钮`}
             secondary={hotplugSettingText}
           />
         </ListItem>
@@ -264,51 +263,34 @@ class HelpPhoneNotRecognized extends PureComponent {
           {showPhoneNotRecognizedNote && (
             <>
               <Typography component="p" variant="body2">
-                <strong>{APP_NAME}</strong> was a project that I started to
-                solve a problem that was so personal to me. But I always knew,
-                that there&apos;s a community, whose facing the same problem as
-                I did.
+                <strong>{APP_NAME}</strong> 是一个我开始的项目，旨在解决一个对我个人非常重要的问题。但我一直知道，有一个社区也面临着与我相同的问题。
               </Typography>
               <Typography component="p" variant="body2" paragraph>
-                I wasn&apos;t wrong, I guess. Now, we are a strong community
-                with users from over&nbsp;
-                <strong>180 countries</strong>. It&apos;s overwhelming to see
-                the response that I have received from all of you, not just
-                appreciating the app, but also giving me suggestions and
-                feedback to improve it.
+                我想我没有错。现在，我们是一个来自<strong>180多个国家</strong>的强大社区。看到大家对应用的反馈，不仅是赞赏，还有建议和改进意见，真的让人感到欣慰。
               </Typography>
               <Typography component="p" variant="body2">
-                As they say, you build for the community and learn from it.
+                正如人们所说，为社区而建，从社区中学习。
               </Typography>
               <Typography component="p" variant="body2" paragraph>
-                I read each and every message that you send and am constantly
-                working to improve the app based on your feedback. Keep sending
-                more of those :)
+                我阅读了您发送的每一条消息，并根据您的反馈不断改进应用。请继续发送更多的反馈 :)
               </Typography>
               <Typography component="p" variant="body2" paragraph>
-                Some of you have been telling me that there are issues with
-                connecting certain mobile phones (<i>mostly Samsung</i>) to{' '}
-                {APP_NAME}. I have been working hard to fix this issue by
-                migrating the existing MTP Kernel to a better one.
+                有些用户告诉我，某些手机（<i>主要是三星</i>）连接到 {APP_NAME} 时存在问题。我一直在努力通过迁移现有的 MTP 内核到更好的内核来解决这个问题。
               </Typography>
               <Typography component="p" variant="body2" paragraph>
-                You may reach out to me at&nbsp;
+                您可以通过以下方式与我联系：
                 <a
                   href={`mailto:${AUTHOR_EMAIL}?Subject=${helpPhoneNotConnecting}&Body=${APP_NAME} - ${APP_VERSION}`}
                 >
                   {AUTHOR_EMAIL}
                 </a>
-                &nbsp;or check out this&nbsp;
-                <a onClick={this._handleGithubThreadTap}>thread</a>
-                &nbsp;on GitHub for tracking the same,&nbsp;
-                <i>
-                  to collaborate and make this community bigger and stronger
-                </i>
-                !
+                或查看此
+                <a onClick={this._handleGithubThreadTap}>GitHub 线程</a>
+                ，以跟踪问题，
+                <i>共同协作，让这个社区变得更大更强</i>！
               </Typography>
               <Typography component="p" variant="body2" paragraph>
-                If you&apos;d like to support my work or buy me up a cup of
-                coffee, you can contribute via&nbsp;Paypal:&nbsp;
+                如果您想支持我的工作或请我喝杯咖啡，可以通过以下方式捐赠：Paypal：
                 <a
                   onClick={(events) => {
                     openExternalUrl(SUPPORT_PAYPAL_URL, events);
@@ -316,7 +298,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                 >
                   {SUPPORT_PAYPAL_URL}
                 </a>
-                &nbsp;or Buy me a coffee:&nbsp;
+                或 Buy me a coffee：
                 <a
                   onClick={(events) => {
                     openExternalUrl(BUY_ME_A_COFFEE_URL, events);
@@ -324,21 +306,19 @@ class HelpPhoneNotRecognized extends PureComponent {
                 >
                   {BUY_ME_A_COFFEE_URL}
                 </a>
-                .
+                。
               </Typography>
               <Typography component="p" variant="h6" paragraph>
-                FAQs
+                常见问题
               </Typography>
             </>
           )}
 
           {isKalamModeDisabled && (
             <Accordion className={styles.expansionRoot}>
-              {/* <----- Kalam Mode is disabed -----> */}
-
               <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                 <Typography className={styles.heading}>
-                  {`Upgrade you mac's OS version for better app experience`}
+                  {`升级您的 macOS 版本以获得更好的应用体验`}
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
@@ -348,7 +328,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                       <SystemUpdate />
                     </ListItemIcon>
                     <ListItemText
-                      primary={`We have now officially retired the support for '${MTP_MODE.kalam}' Kernel on 'macOS 10.13' (OS X El High Sierra) and lower. Only the '${MTP_MODE.legacy}' MTP mode will continue working on these outdated machines.`}
+                      primary={`我们已正式停止对 macOS 10.13（OS X El High Sierra）及更低版本的 '${MTP_MODE.kalam}' 内核支持。只有 '${MTP_MODE.legacy}' 模式会继续在这些旧设备上工作。`}
                     />
                   </ListItem>
 
@@ -357,7 +337,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                       <SystemUpdate />
                     </ListItemIcon>
                     <ListItemText
-                      primary={`Only the latest 3 versions of macOS will receive the '${MTP_MODE.kalam}' Kernel updates, which includes new devices support, fixes, stability improvements`}
+                      primary={`只有最新的 3 个 macOS 版本会收到 '${MTP_MODE.kalam}' 内核更新，包括新设备支持、修复和稳定性提升。`}
                     />
                   </ListItem>
                 </List>
@@ -370,7 +350,7 @@ class HelpPhoneNotRecognized extends PureComponent {
 
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`My ${deviceLabel.toLowerCase()} is not connecting`}
+                {`我的 ${deviceLabel.toLowerCase()} 无法连接`}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -380,14 +360,10 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <CloseIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Quit Google drive, Android File Transfer, Dropbox, OneDrive, Preview (for macOS ventura) or any other app that might be reading USB`}
+                    primary={`退出 Google Drive、Android 文件传输、Dropbox、OneDrive、预览（macOS Ventura）或任何可能读取 USB 的应用程序`}
                     secondary={
                       <span>
-                        {`Uninstall 'Android File Transfer' by Google if it
-                              keeps popping up everytime you connect your
-                              Android device. The most recent versions of Google
-                              drive and Dropbox are known to interfere with ${APP_NAME}. Completely quiting these apps may fix
-                              this issue. `}
+                        {`如果每次连接安卓设备时都会弹出 Google 的“Android 文件传输”，请卸载该应用。最新版 Google Drive 和 Dropbox 可能会干扰 ${APP_NAME}，完全退出这些应用可能解决问题。`}
                         <a
                           onClick={(events) => {
                             openExternalUrl(
@@ -396,7 +372,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                             );
                           }}
                         >
-                          Read more...
+                          阅读更多...
                         </a>
                       </span>
                     }
@@ -408,8 +384,8 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <ToggleOffIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you face frequent device disconnections, turn off 'USB Hotplug'`}
-                    secondary={`Settings > General Tab`}
+                    primary={`如果设备频繁断开连接，请关闭“USB 热插拔”功能`}
+                    secondary={`设置 > 常规选项卡`}
                   />
                 </ListItem>
 
@@ -422,9 +398,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I have Google drive installed on my ${
-                  DEVICES_LABEL[DEVICE_TYPE.local]
-                }`}
+                {`我在 ${DEVICES_LABEL[DEVICE_TYPE.local]} 上安装了 Google Drive`}
               </Typography>
             </AccordionSummary>
 
@@ -435,11 +409,11 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <DeleteIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`The most recent versions of Google drive is known to interfere with ${APP_NAME}. Simply quiting Google drive may fix this issue`}
+                    primary={`最新版 Google Drive 可能会干扰 ${APP_NAME}。只需退出 Google Drive 应用程序可能会解决此问题`}
                     secondary={
                       <img
                         src={imgsrc(`help/google-drive-not-connecting.png`)}
-                        alt="Files and Folders"
+                        alt="文件和文件夹"
                         className={styles.imagePlaceholder}
                       />
                     }
@@ -455,9 +429,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I have Dropbox installed on my ${
-                  DEVICES_LABEL[DEVICE_TYPE.local]
-                }`}
+                {`我在 ${DEVICES_LABEL[DEVICE_TYPE.local]} 上安装了 Dropbox`}
               </Typography>
             </AccordionSummary>
 
@@ -468,7 +440,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <DeleteIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`The most recent versions of Dropbox is known to interfere with ${APP_NAME}. Simply quiting Dropbox may fix this issue`}
+                    primary={`最新版 Dropbox 可能会干扰 ${APP_NAME}。只需退出 Dropbox 应用程序可能会解决此问题`}
                   />
                 </ListItem>
 
@@ -482,7 +454,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`The app goes blank while trying to connect a Samsung device`}
+                {`应用在尝试连接三星设备时变为空白`}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -492,15 +464,14 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <DeleteIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Uninstall Samsung SmartSwitch, if installed"
+                    primary="卸载 Samsung SmartSwitch（如果已安装）"
                     secondary={
                       <a
                         onClick={(events) => {
                           openExternalUrl(DELETE_KEIS_SMARTSWITCH_URL, events);
                         }}
                       >
-                        How to remove Samsung SmartSwitch and drivers from your
-                        MacBook
+                        如何从 MacBook 中删除 Samsung SmartSwitch 和驱动程序
                       </a>
                     }
                   />
@@ -510,7 +481,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                   <ListItemIcon>
                     <ReplayIcon />
                   </ListItemIcon>
-                  <ListItemText primary={`Restart ${APP_NAME}`} />
+                  <ListItemText primary={`重新启动 ${APP_NAME}`} />
                 </ListItem>
 
                 <RenderBasicConnection />
@@ -523,7 +494,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I keep seeing "${mtpErrors[[MTP_ERROR.ErrorDeviceSetup]]}"`}
+                {`我总是看到 "${mtpErrors[[MTP_ERROR.ErrorDeviceSetup]]}"`}
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
@@ -537,7 +508,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I keep seeing "${
+                {`我总是看到 "${
                   mtpErrors[[MTP_ERROR.ErrorAllowStorageAccess]]
                 }"`}
               </Typography>
@@ -549,18 +520,18 @@ class HelpPhoneNotRecognized extends PureComponent {
                   <ListItemIcon>
                     <LockOpenIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Unlock your Android device" />
+                  <ListItemText primary="请解锁您的安卓设备" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
                     <TouchAppIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Tap on the "Allow" button, if you see the "Allow access to the device data" pop up`}
+                    primary={`如果弹出“允许访问设备数据”窗口，请点击“允许”按钮`}
                     secondary={
                       <img
                         src={imgsrc(`help/allow-data-access.png`)}
-                        alt="Allow access to the device data"
+                        alt="允许访问设备数据"
                         className={styles.imagePlaceholder}
                       />
                     }
@@ -571,8 +542,8 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FiberManualRecordIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you don't see the "Allow access to the device data" pop up then reconnect your ${deviceLabel.toLowerCase()}`}
-                    secondary={`Follow the instructions below if your ${deviceLabel.toLowerCase()} is still undetected`}
+                    primary={`如果您没有看到“允许访问设备数据”的弹出窗口，请重新连接您的${deviceLabel.toLowerCase()}`}
+                    secondary={`如果您的${deviceLabel.toLowerCase()}仍未被识别，请按照以下说明操作`}
                   />
                 </ListItem>
 
@@ -581,7 +552,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FiberManualRecordIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you are prompted to "Allow access to the device data" multiple times then reconnect your ${deviceLabel.toLowerCase()} and try again`}
+                    primary={`如果系统提示您多次“允许访问设备数据”，请重新连接您的${deviceLabel.toLowerCase()}并重试`}
                   />
                 </ListItem>
               </List>
@@ -592,7 +563,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I am prompted to "Allow access to the device data" multiple times`}
+                {`我被多次提示 "允许访问设备数据"`}
               </Typography>
             </AccordionSummary>
 
@@ -607,7 +578,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`Refresh button is stuck`}
+                {`刷新按钮卡住了`}
               </Typography>
             </AccordionSummary>
 
@@ -622,7 +593,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I keep seeing "${
+                {`我总是看到 "${
                   mtpErrors[[MTP_ERROR.ErrorMultipleDevice]]
                 }"`}
               </Typography>
@@ -634,13 +605,13 @@ class HelpPhoneNotRecognized extends PureComponent {
                   <ListItemIcon>
                     <FiberManualRecordIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Unplug all your MTP devices" />
+                  <ListItemText primary="拔掉所有MTP设备" />
                 </ListItem>
                 <ListItem>
                   <ListItemIcon>
                     <UsbIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Plug your MTP devices" />
+                  <ListItemText primary="插入您的MTP设备" />
                 </ListItem>
 
                 <RenderBasicConnection showUnplugPhone={false} />
@@ -652,7 +623,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`My ${deviceLabel.toLowerCase()} gets disconnected everytime the display goes into sleep`}
+                {`每当屏幕进入睡眠状态时，我的 ${deviceLabel.toLowerCase()} 就会断开连接`}
               </Typography>
             </AccordionSummary>
 
@@ -663,7 +634,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FiberManualRecordIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`In a very rare case your ${deviceLabel.toLowerCase()} may get disconnected when your display goes into sleep. This may disrupt any active file transfers`}
+                    primary={`在极少数情况下，当您的 ${deviceLabel.toLowerCase()} 处于睡眠状态时，可能会断开连接。这可能会干扰任何正在进行的文件传输`}
                   />
                 </ListItem>
 
@@ -671,7 +642,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                   <ListItemIcon>
                     <LockOpenIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Unlock your Android device" />
+                  <ListItemText primary="请解锁您的安卓设备" />
                 </ListItem>
 
                 <ListItem>
@@ -679,11 +650,11 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <RadioButtonCheckedIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Open ${deviceLabel.toLowerCase()}'s Settings > Display > Sleep and set it as 30 minutes or whatever is the highest`}
+                    primary={`打开${deviceLabel.toLowerCase()}的设置 > 显示 > 睡眠，并将其设置为30分钟或更长时间`}
                     secondary={
                       <img
                         src={imgsrc(`help/sleep-setting.jpg`)}
-                        alt="Sleep settings"
+                        alt="睡眠设置"
                         className={styles.imagePlaceholder}
                       />
                     }
@@ -699,7 +670,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I keep seeing "Quit 'Android File Transfer' app (by Google) and Refresh"`}
+                {`我总是看到 "退出 'Android File Transfer' 应用（由 Google 提供）并刷新"`}
               </Typography>
             </AccordionSummary>
 
@@ -709,7 +680,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                   <ListItemIcon>
                     <DeleteIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Quit and uninstall Google's 'Android File Transfer' app" />
+                  <ListItemText primary="退出并卸载谷歌的'Android File Transfer'应用" />
                 </ListItem>
 
                 <RenderBasicConnection showUnplugPhone={false} />
@@ -721,7 +692,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`My phone is still not connecting`}
+                {`我的手机仍然无法连接`}
               </Typography>
             </AccordionSummary>
 
@@ -732,15 +703,14 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <DeleteIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Uninstall Samsung SmartSwitch, if installed"
+                    primary="卸载 Samsung SmartSwitch（如果已安装）"
                     secondary={
                       <a
                         onClick={(events) => {
                           openExternalUrl(DELETE_KEIS_SMARTSWITCH_URL, events);
                         }}
                       >
-                        How to remove Samsung SmartSwitch and drivers from your
-                        MacBook
+                        如何从 MacBook 中删除 Samsung SmartSwitch 和驱动程序
                       </a>
                     }
                   />
@@ -751,8 +721,8 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <PowerIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary="Try changing the MTP mode"
-                    secondary={`Settings > Tab > Change the "MTP Mode"`}
+                    primary="尝试更改MTP模式"
+                    secondary={`设置 > 标签 > 更改“MTP模式”`}
                   />
                 </ListItem>
 
@@ -765,7 +735,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I keep seeing "${localErrorDictionary.noPerm}" error whenever I try to open a folder in the Local Disk pane`}
+                {`我每次尝试打开本地磁盘窗格中的文件夹时都看到 "${localErrorDictionary.noPerm}" 错误`}
               </Typography>
             </AccordionSummary>
 
@@ -776,7 +746,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FolderSpecialIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`macOS requires that you provide access to your Documents, Desktop, Downloads, and Bin folders, iCloud Drive, the folders of third-party cloud storage providers, removable media, and external drives`}
+                    primary={`macOS 需要您提供对文档、桌面、下载和废纸篓文件夹、iCloud Drive、第三方云存储提供商的文件夹、可移动媒体和外部驱动器的访问权限`}
                   />
                 </ListItem>
 
@@ -785,7 +755,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <ThumbUpIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Tap on the "Ok" button, if you see a "${APP_NAME} would like to access files in your..." pop up while trying to open a folder`}
+                    primary={`如果在尝试打开文件夹时看到 "${APP_NAME} 想要访问您在..." 的弹出窗口，请点击 "确定" 按钮`}
                     secondary={
                       <img
                         src={imgsrc(`help/macos-directory-access.jpg`)}
@@ -800,7 +770,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FiberManualRecordIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you keep getting the "${localErrorDictionary.noPerm}" error then you may need to give access to these folders by going to "Security and Privacy" in "System Preferences"`}
+                    primary={`如果您不断收到 "${localErrorDictionary.noPerm}" 错误，则可能需要通过 "系统偏好设置" 中的 "安全性与隐私" 来授予对这些文件夹的访问权限`}
                   />
                 </ListItem>
                 <ListItem>
@@ -808,8 +778,8 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <SettingsIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Open macOS "System Preferences" > "Security and Privacy" > "Privacy Tab"`}
-                    secondary={`Tap on the "Click the lock to make changes" button and authenticate yourself`}
+                    primary={`打开 macOS "系统偏好设置" > "安全性与隐私" > "隐私" 标签`}
+                    secondary={`点击 "点击锁定以进行更改" 按钮并进行身份验证`}
                   />
                 </ListItem>
 
@@ -818,7 +788,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <ListAltIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`In the left hand side pane find the "Files and Folders" option, select it. In the right hand side pane find "${APP_NAME}"`}
+                    primary={`在左侧窗格中找到 "文件和文件夹" 选项，选择它。在右侧窗格中找到 "${APP_NAME}"`}
                   />
                 </ListItem>
 
@@ -827,13 +797,13 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <CheckIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Mark all the folders to which you want to provide ${APP_NAME} access`}
+                    primary={`标记您希望授予 ${APP_NAME} 访问权限的所有文件夹`}
                     secondary={
                       <img
                         src={imgsrc(
                           `help/privacy-restricted-folder-access.png`
                         )}
-                        alt="Files and Folders"
+                        alt="文件与文件夹"
                         className={styles.imagePlaceholder}
                       />
                     }
@@ -847,7 +817,7 @@ class HelpPhoneNotRecognized extends PureComponent {
           <Accordion className={styles.expansionRoot}>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography className={styles.heading}>
-                {`I am still being denied access to some of the folders in the Local Disk pane`}
+                {`我仍然无法访问本地磁盘窗格中的某些文件夹`}
               </Typography>
             </AccordionSummary>
 
@@ -858,7 +828,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FolderSpecialIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`macOS requires that you provide access to your Documents, Desktop, Downloads, and Bin folders, iCloud Drive, the folders of third-party cloud storage providers, removable media, and external drives`}
+                    primary={`macOS 需要您提供对文档、桌面、下载和废纸篓文件夹、iCloud Drive、第三方云存储提供商的文件夹、可移动媒体和外部驱动器的访问权限`}
                   />
                 </ListItem>
                 <ListItem>
@@ -866,7 +836,7 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <FiberManualRecordIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you still keep getting the "${localErrorDictionary.noPerm}" error then you may grant "Full Disk Access" by going to "Security and Privacy" in "System Preferences"`}
+                    primary={`如果您仍然不断收到 "${localErrorDictionary.noPerm}" 错误，则可以通过 "系统偏好设置" 中的 "安全性与隐私" 授予 "完全磁盘访问" 权限`}
                   />
                 </ListItem>
                 <ListItem>
@@ -874,8 +844,8 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <SettingsIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`Open macOS "System Preferences" > "Security and Privacy" > "Privacy Tab"`}
-                    secondary={`Tap on the "Click the lock to make changes" button and authenticate yourself`}
+                    primary={`打开 macOS "系统偏好设置" > "安全性与隐私" > "隐私" 标签`}
+                    secondary={`点击 "点击锁定以进行更改" 按钮并进行身份验证`}
                   />
                 </ListItem>
 
@@ -884,11 +854,11 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <ListAltIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`In the left hand side pane find the "Full Disk Access" option, select it. In the right hand side pane find "${APP_NAME}"`}
+                    primary={`在左侧窗格中找到 "完全磁盘访问" 选项，选择它。在右侧窗格中找到 "${APP_NAME}"`}
                     secondary={
                       <img
                         src={imgsrc(`help/full-disk-access.png`)}
-                        alt="Files and Folders"
+                        alt="文件与文件夹"
                         className={styles.imagePlaceholder}
                       />
                     }
@@ -900,11 +870,11 @@ class HelpPhoneNotRecognized extends PureComponent {
                     <CheckIcon />
                   </ListItemIcon>
                   <ListItemText
-                    primary={`If you didn't find ${APP_NAME} in the list, then tap on the "+" button and select "${APP_NAME}" by navigating to the "Application" folder`}
+                    primary={`如果您在列表中找不到 ${APP_NAME}，请点击 "+" 按钮，并通过导航到 "应用程序" 文件夹来选择 "${APP_NAME}"`}
                     secondary={
                       <img
                         src={imgsrc(`help/full-disk-access-file-picker.jpeg`)}
-                        alt="Files and Folders"
+                        alt="文件与文件夹"
                         className={styles.imagePlaceholder}
                       />
                     }
