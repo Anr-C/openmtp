@@ -45,7 +45,7 @@ module.exports = () => {
   return {
     productName: 'OpenMTP',
     appId: 'io.ganeshrvel.openmtp',
-    forceCodeSigning: true,
+    forceCodeSigning: false,
     // eslint-disable-next-line no-template-curly-in-string
     artifactName: '${name}-${version}-${os}-${arch}.${ext}',
     copyright: '© Ganesh Rathinavel',
